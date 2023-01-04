@@ -124,10 +124,19 @@ li {
   background: url(../img/search.png) no-repeat center #654EA3;
 }
 
+.searchbtn:hover{
+  opacity: .7;
+}
+
 .login {
   text-align: center;
   width: 300px;
   height: 150px;
+  /* background-color: red; */
+}
+
+.login>div{
+  display: flex;
 }
 
 .login>h3 {
@@ -135,7 +144,7 @@ li {
 }
 
 .loginwrap {
-  display: flex;
+  flex-direction: column;
 }
 
 .loginwrap>input {
@@ -145,7 +154,6 @@ li {
   font-size: 13px;
   margin-top: 4px;
   cursor: pointer;
-  flex-direction: column;
 }
 
 .loginwrap>input:first-of-type {
@@ -156,10 +164,20 @@ li {
   border-radius: 0 0 10px 10px;
 }
 
-.loginwrap>.submit {
+.login>div>form>.submit {
+  width: 50px;
+  height: 30px;
   border-radius: 10px;
+  font-size: 12px;
+  margin-top: 10px;
+  border: 1px solid #939599;
   background-color: #654EA3;
   color: white;
+  cursor: pointer;
+}
+
+.login>div>form>.submit:hover{
+  opacity: .7;
 }
 
 .login>p {
