@@ -31,6 +31,7 @@
 
   <div class="section01">
     <div class="searchwrap">
+      <h3>배송 조회</h3>
       <form action="parcelService" method="get">
         <select name="shippingCompany">
           <option value='' selected>택배사 선택</option>
@@ -39,15 +40,18 @@
           <option value='lotte'>롯데택배</option>
           <option value='post'>우체국택배</option>
         </select>
-        <input type="TDNumber" placeholder="운송장 번호 - 없이 입력">
-        <input class="section01s" type="submit" value="배송 조회">
+        <input type="text" placeholder="운송장 번호 - 없이 입력">
+        <input class="searchbtn" type="submit" value="배송 조회">
       </form>
     </div>
     <div class="login">
+      <h3>로그인</h3>
       <form action="login" method="get">
-        <input type="text" name="id" placeholder="아이디">
-        <input type="password" name="pw" placeholder="비밀번호">
-        <input class="submit" type="submit" value="로그인">
+        <div class="loginwrap">
+          <input type="text" name="id" placeholder="아이디">
+          <input type="password" name="pw" placeholder="비밀번호">
+          <input class="submit" type="submit" value="로그인">
+        </div>
       </form>
       <p><a href="#">회원가입</a> |
         <a href="#">아이디 찾기</a> | <a href="#">비밀번호 찾기</a></p>

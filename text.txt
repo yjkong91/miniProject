@@ -10,7 +10,8 @@ ultra violet 5F4B8B / 654EA3
 ultimate gray 939599
 illuminating f7e00e
 
-logo 이미지와 h1태그 중간배치
-배송목록 div 가운데정렬
-로그인 배송조회 submit input 옆으로
+
+
+배송목록 div 사이 간격
+로그인 배송조회 submit input 옆으로 - 플렉스
 submit form안에?
