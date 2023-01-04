@@ -20,14 +20,10 @@ a:hover {
   opacity: .5;
 }
 
-body {
-  /* background-color: #e7e7e7; */
-}
-
 header {
   width: 100%;
   height: 200px;
-  padding: 30px;
+  padding: 50px;
   box-sizing: border-box;
   /* background-color: red; */
 }
@@ -36,7 +32,7 @@ header>img {
   margin: auto;
 }
 
-.logo{
+.logo {
   text-align: center;
   margin: auto;
 }
@@ -44,14 +40,16 @@ header>img {
 h1 {
   display: inline;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   width: 300px;
+  line-height: 50px;
   /* background-color: blue; */
 }
-header > .logo > p {
+
+header>.logo>p {
   font-size: 14px;
-  display: inline;
 }
+
 .logo>a {
   color: #654EA3;
 }
@@ -77,6 +75,12 @@ li {
 }
 
 .section01 {
+  width: 100%;
+  height: 300px;
+  /* background-color: aqua; */
+}
+
+.searchwrap {
   text-align: center;
   width: 600px;
   height: 300px;
@@ -85,42 +89,58 @@ li {
 }
 
 
-.section01>select {
-  width: 500px;
+.searchwrap>form>select {
+  width: 400px;
   border: 1px solid #ccc;
   padding: 10px;
   box-sizing: border-box;
   font-size: 15px;
-  margin: 30px;
+  margin-bottom: 10px;
+  margin-top: 30px;
   color: #939599;
+  border-radius: 10px 10px 0 0;
 }
 
-.section01>input {
-  width: 500px;
+.searchwrap>form>input {
+  width: 400px;
   border: 1px solid #ccc;
   padding: 10px;
   box-sizing: border-box;
   font-size: 15px;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.searchwrap>form>input:nth-of-type(1) {
+  border-radius: 0 0 10px 10px;
 }
 
 .login {
   text-align: center;
   width: 250px;
   height: 200px;
-  /* border: 1px solid #939599; */
   float: left;
   margin-left: 20px;
   margin: 25px;
+  /* border: 1px solid #939599; */
 }
 
-.login>input {
-  width: 200px;
+.login>form>input {
+  width: 150px;
   border: 1px solid #ccc;
   padding: 5px;
   box-sizing: border-box;
   font-size: 13px;
-  margin: 5px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.login>form>input:first-of-type {
+  border-radius: 10px 10px 0 0;
+}
+
+.login>form>input:nth-of-type(2) {
+  border-radius: 0 0 10px 10px;
 }
 
 .login>p {
@@ -133,7 +153,7 @@ li {
   text-align: center;
   padding: 50px;
   height: 200px;
-  margin: auto;
+  /* background-color: red; */
 }
 
 article>div {
@@ -147,7 +167,11 @@ article>div {
   margin-left: 80px;
   margin-top: 50px;
   line-height: 80px;
-  background-color: #fff7ac;
+  background-color: #654EA3;
+}
+
+article>div>a>p {
+  color: white;
 }
 
 footer {
@@ -157,4 +181,5 @@ footer {
   padding: 50px;
   box-sizing: border-box;
   border: 1px solid #939599;
+  font-size: 13px;
 }
