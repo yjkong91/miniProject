@@ -13,7 +13,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: #654EA3;
 }
 
 a:hover {
@@ -22,8 +21,8 @@ a:hover {
 
 header {
   width: 100%;
-  height: 200px;
-  padding: 50px;
+  height: 150px;
+  padding: 30px;
   box-sizing: border-box;
 }
 
@@ -124,7 +123,7 @@ li {
   background: url(../img/search.png) no-repeat center #654EA3;
 }
 
-.searchbtn:hover{
+.searchbtn:hover {
   opacity: .7;
 }
 
@@ -135,7 +134,7 @@ li {
   /* background-color: red; */
 }
 
-.login>div{
+.login>div {
   display: flex;
 }
 
@@ -176,7 +175,7 @@ li {
   cursor: pointer;
 }
 
-.login>div>form>.submit:hover{
+.login>div>form>.submit:hover {
   opacity: .7;
 }
 

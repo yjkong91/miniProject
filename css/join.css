@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap");
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1,
+p,
+h3 {
+  color: #654EA3;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #939599;
+}
+
+header>img {
+  margin: auto;
+}
+
+.logo {
+  text-align: center;
+}
+
+h1 {
+  display: inline;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+}
+
+img,
+h1 {
+  vertical-align: middle;
+}
+
+header>.logo>p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.section {
+  margin-top: 30px;
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #444;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.box01,
+.box02 {
+  border: 1px solid #939599;
+  height: 300px;
+  overflow: scroll;
+}
+
+.join {
+  border: 1px solid #939599;
+  width: 20%;
+  height: 30px;
+  text-align: center;
+  background-color: #654EA3;
+  line-height: 30px;
+}
+
+.join:hover {
+  opacity: .5;
+}
+
+h4 {
+  color: white;
+}
+
+#chk01:disabled+label {
+  color: lightgray;
+}
+
+#chk02:disabled+label {
+  color: lightgray;
+}
+
+footer {
+  text-align: center;
+  height: 100px;
+  padding: 50px;
+  box-sizing: border-box;
+  border: 1px solid #939599;
+  font-size: 13px;
+  margin-top: 50px;
+}
