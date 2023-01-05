@@ -34,6 +34,9 @@ box02.addEventListener('scroll', function () {
 
 });
 
-let chk01 = document.querySelector('#chk01').checked;
-let chk02 = document.querySelector('#chk02').checked;
-if (chk01 && chk02) {} else {}
+const submitButton = document.querySelector('button');
+if (chk01 && chk02) {
+  submitButton.disabled = false; // 버튼 활성화
+} else {
+  submitButton.disabled = true; // 버튼 비활성화
+}

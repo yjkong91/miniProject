@@ -6,20 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>올택-회원가입</title>
-  <link rel="stylesheet" href="/css/clause.css">
-  <link rel="shortcut icon" href="/img/favicon.png">
+  <link rel="stylesheet" href="css/clause.css">
+  <link rel="shortcut icon" href="img/favicon.png">
 </head>
 
 <body>
   <header>
     <div class="logo">
-      <a href="/index.html"><img src="/img/logo.png" alt="logo" width="50" height="50">
+      <a href="index.html"><img src="img/logo.png" alt="logo" width="50" height="50">
         <h1>올택</h1>
       </a>
       <p>모든 택배, 한눈에 확인하세요</p>
     </div>
   </header>
-  <form>
+  <form >
     <div class="section">
       <h3>회원 약관</h3>
       <div class="box01">
@@ -38,7 +38,7 @@
         numquam dignissimos. Doloremque tempore maiores voluptatum vero modi eveniet esse, maxime sed blanditiis
         doloribus!<br>
       </div>
-      <input type="checkbox" id="chk01" disabled>
+      <input type="checkbox" name="agreement" id="chk01" value="chk01" disabled>
       <label for="chk01">약관에 동의합니다.</label>
     </div>
     <div class="section">
@@ -58,13 +58,13 @@
         numquam dignissimos. Doloremque tempore maiores voluptatum vero modi eveniet esse, maxime sed blanditiis
         doloribus!<br>
       </div>
-      <input type="checkbox" id="chk02" disabled>
+      <input type="checkbox" name="agreement" id="chk02" value="chk02" disabled>
       <label for="chk02">약관에 동의합니다.</label>
     </div>
     <div class="join">
-      <a href="/join/join.html">
-        <button class="joinbtn" disabled>회원가입</button>
-      </a>
+        <button type="submit" class="joinbtn" disabled>
+          <a href="join/join.html">회원가입 </a></button>
+     
     </div>
   </form>
 
@@ -76,7 +76,7 @@
     </p>
   </footer>
 
-  <script src="/script/clause.js"></script>
+  <script src="script/clause.js"></script>
 
 
 </body>

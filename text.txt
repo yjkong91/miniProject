@@ -15,3 +15,5 @@ illuminating f7e00e
 배송목록 div 사이 간격
 로그인 배송조회 submit input 옆으로 - 플렉스
 submit form안에?
+
+.js	체크박스 2개 다 체크되면 버튼 활성화
