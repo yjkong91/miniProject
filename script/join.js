@@ -1,44 +1,3 @@
-let box01 = document.querySelector('.box01');
-
-console.log(box01.scrollHeight);
-console.log(box01.clientHeight);
-
-let boxHeight01 = box01.scrollHeight - box01.clientHeight - 5;
-let isDisable01 = true;
-
-box01.addEventListener('scroll', function () {
-  // console.log(box.scrollTop);
-
-  if (isDisable01 && (box01.scrollTop >= boxHeight01)) {
-    document.querySelector('#chk01').disabled = false;
-    isDisable01 = false;
-  }
-
-});
-
-let box02 = document.querySelector('.box02');
-
-console.log(box02.scrollHeight);
-console.log(box02.clientHeight);
-
-let boxHeight02 = box02.scrollHeight - box02.clientHeight - 5;
-let isDisable02 = true;
-
-box02.addEventListener('scroll', function () {
-  // console.log(box.scrollTop);
-
-  if (isDisable02 && (box02.scrollTop >= boxHeight02)) {
-    document.querySelector('#chk02').disabled = false;
-    isDisable02 = false;
-  }
-
-});
-
-let chk01 = document.querySelector('#chk01').checked;
-let chk02 = document.querySelector('#chk02').checked;
-if (chk01 && chk02) {} else {}
-
-
 function sample4_execDaumPostcode() {
   new daum.Postcode({
     oncomplete: function (data) {
@@ -65,9 +24,83 @@ function sample4_execDaumPostcode() {
 }
 
 // 정규식 조건
-const regexId = /^[a-z][a-z\d]{6,}$/;
-const regexPw = /^[A-Za-z\d]{8,}$/;
+const regexId = /^[a-z][a-z\d]{4,}$/;
+const regexPw = /^[A-Za-z\d]{6,}$/;
 const regexName = /[가-힣]{2,}/;
-const regexTel = /^01\d\d{3,4}\d{4}$/;
+const regexTel = /^\d{2,3}-\d{3,4}-\d{4}$/;
 const regexMail = /.+@[a-z]+(\.[a-z]+){1,2}$/;
 
+// 올바르게 입력했는지를 저장해주는 변수들
+let isId = false;
+let isPw = false;
+let isName = false;
+let isTel = false;
+let isEmail = false;
+
+// 유효성 검사 후 결과를 표시해주는 p태그들
+let idCheck = document.querySelector('.id_input_check');
+let pwCheck = document.querySelector('.pw_input_check');
+let nameCheck = document.querySelector('.name_input_check')
+let emailCheck = document.querySelector('.email_input_check');
+let telCheck = document.querySelector('.tel_input_check');
+
+document.querySelector('#id_txt').addEventListener('keyup', function () {
+  let val = document.querySelector('#id_txt').value;
+  console.log(val);
+
+  isId = regexId.test(val);
+  showMsg(isId, idCheck);
+});
+
+let pw;
+document.querySelector('#pw_txt').addEventListener('keyup', function () {
+  pw = document.querySelector('#pw_txt').value;
+
+  isPw = regexPw.test(pw);
+  showMsg(isPw, pwCheck);
+});
+
+document.querySelector('#repw').addEventListener('keyup', function () {
+let dbpw = document.querySelector('#repw').value;
+if (pw === dbpw) {
+  document.querySelector('.dbpw_input_check').innerHTML = '비밀번호가 일치합니다.';
+  document.querySelector('.dbpw_input_check').style.color = 'blue';
+} else {
+  document.querySelector('.dbpw_input_check').innerHTML = '비밀번호가 일치하지 않습니다.';
+  document.querySelector('.dbpw_input_check').style.color = 'red';
+}});
+
+
+document.querySelector('#name_txt').addEventListener('keyup', function () {
+  let val = document.querySelector('#name_txt').value;
+
+  isName = regexName.test(val);
+  showMsg(isName, nameCheck);
+});
+
+document.querySelector('#tel_txt').addEventListener('keyup', function () {
+  let val = document.querySelector('#tel_txt').value;
+
+  isTel = regexTel.test(val);
+  showMsg(isTel, telCheck);
+});
+
+document.querySelector('#email_txt').addEventListener('keyup', function () {
+  let val = document.querySelector('#email_txt').value;
+
+  isEmail = regexMail.test(val);
+  showMsg(isEmail, emailCheck);
+});
+
+
+function showMsg(isX, xCheck) {
+  if (isX) {
+    xCheck.innerHTML = "";
+    xCheck.style.color = 'blue';
+  } else {
+    xCheck.innerHTML = "잘못 입력 하셨습니다.";
+    xCheck.style.color = 'red';
+  }
+
+  isOk();
+}

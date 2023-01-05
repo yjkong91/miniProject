@@ -25,40 +25,43 @@
   <div class="section">
 
     <form action="sign" method="post" id="signform">
-      <h4>회원 가입 정보 입력</h4>
+      <h4>회원 정보 입력</h4>
       <div class="id">
         <label>아이디 입력</label><br>
-        <input type="text" name="id" id="id" placeholder="6자 이상(영소문자+숫자)">
-        <div class="id regex"></div>
+        <input type="text" name="id" id="id_txt" placeholder="4자 이상(영소문자+숫자)">
+        <p class="id_input_check"></p>
       </div>
 
       <div class="pw">
         <label>비밀번호 입력</label><br>
-        <input type="password" name="pw" id="pw" placeholder="영어대소문자,숫자 8자 이상">
-        <div class="pw regex"></div>
+        <input type="password" name="pw" id="pw_txt" placeholder="영어대소문자,숫자 6자 이상">
+        <p class="pw_input_check"></p>
         <input type="password" id="repw" placeholder="비밀번호 확인"><br>
-        <div class="repw regex"></div>
+        <p class="dbpw_input_check"></p>
       </div>
 
       <div class="id">
         <label>이름 입력</label><br>
-        <input type="text" name="name" id="name" placeholder="한글만 입력 가능합니다.">
+        <input type="text" name="name" id="name_txt" placeholder="한글만 입력 가능합니다.">
+        <p class="name_input_check"></p>
       </div>
 
       <div class="tel">
         <label>전화번호 입력</label><br>
-        <input type="text" name="tel" id="tel" placeholder="-없이 숫자만 입력">
+        <input type="text" name="tel" id="tel_txt" placeholder="-없이 숫자만 입력">
+        <p class="tel_input_check"></p>
       </div>
 
       <div class="email">
         <label>이메일 입력</label><br>
-        <input type="text" name="email" id="email" placeholder="@포함하여 입력">
+        <input type="text" name="email" id="email_txt" placeholder="@포함하여 입력">
+        <p class="email_input_check"></p>
       </div>
 
       <div class="postcode">
         <label>우편번호 입력</label><br>
-        <input type="text" name="zipcode" id="postcode" placeholder="우편번호">
-        <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기" id="postcode btn">
+        <input type="text" name="zipcode" id="postcode_txt" placeholder="우편번호">
+        <input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기" id="postcode">
       </div>
 
       <div class="address">
@@ -68,8 +71,7 @@
       </div>
 
       <div id="signup">
-        <input type="button" name="signup" value="회원가입" id="signup btn">
-        <input type="reset" value="다시입력" id="reset btn">
+        <input type="button" name="signup" value="회원가입" id="signupbtn">
       </div>
 
 
