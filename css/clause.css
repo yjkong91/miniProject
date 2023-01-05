@@ -8,7 +8,7 @@
 
 h1,
 p,
-h4 {
+h3 {
   color: #654EA3;
 }
 
@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-  opacity: .5;
+  opacity: .7;
 }
 
 header {
@@ -55,55 +55,51 @@ header>.logo>p {
 
 .section {
   margin-top: 30px;
-  width: 60%;
+  width: 600px;
   padding: 20px;
   box-sizing: border-box;
   color: #444;
-  line-height: 30px;
 }
 
-input[type=button],input[type=reset]{
-  font-size: 12px;
+h3 {
+  margin-bottom: 20px;
+}
+
+.box01,
+.box02 {
+  border: 1px solid #939599;
+  height: 300px;
+  overflow: scroll;
+}
+
+.join {
+  padding: 20px;
+  width: 50%;
+}
+
+button {
+  border: 1px solid #939599;
+  width: 30%;
+  height: 30px;
+  line-height: 30px;
   background-color: #654EA3;
   color: white;
-  width: 80px;
-  height: 25px;
-  border: 1px solid #939599;
-  border-radius: 5px;
-  font-weight: 200;
-  cursor: pointer;
-}
-
-input[type=button]:hover,input[type=reset]:hover{
-  opacity: .7;
-}
-
-form{
-  padding: 10px;
-  font-size: 13px;
-  width: 60%;
-  border: 1px solid #939599;
-}
-
-h4 {
-  margin-bottom: 20px;
+  display: block;
   font-size: 15px;
 }
 
-input[type=text],input[type=password]{
-  width: 300px;
-  height: 25px;
+#chk01:disabled+label {
+  color: lightgray;
 }
 
-form>div{
-  padding: 10px;
+#chk02:disabled+label {
+  color: lightgray;
 }
 
-#address{
-  width: 400px;
+.joinbtn:disabled {
+  background-color: lightgray;
+  color: #877aaa;
 }
-
-
 
 footer {
   text-align: center;

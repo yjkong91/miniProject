@@ -218,6 +218,6 @@ footer {
   height: 100px;
   padding: 50px;
   box-sizing: border-box;
-  border: 1px solid #939599;
+  border-top: 1px solid #939599;
   font-size: 13px;
 }
