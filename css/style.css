@@ -141,6 +141,7 @@ input[type=submit]:hover {
 .loginform {
   display: flex;
   align-items: center;
+  /* background-color: red; */
 }
 
 .loginwrap>input {
@@ -150,18 +151,19 @@ input[type=submit]:hover {
   font-size: 13px;
   margin-top: 4px;
   cursor: pointer;
+  margin-left: 50px;
 }
 
 .login>div>.loginform>.submit {
-  width: 30%;
-  height: 30px;
+  width: 20%;
+  height: 65px;
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 5px;
   border: 1px solid #939599;
   background-color: #654EA3;
   color: white;
   cursor: pointer;
-  margin-right: 40px
+  margin-right: 65px;
 }
 
 .login>p {

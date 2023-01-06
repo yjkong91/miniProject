@@ -24,7 +24,7 @@ function sample4_execDaumPostcode() {
 }
 
 // 정규식 조건
-const regexId = /^[a-z][a-z\d]{4,}$/;
+const regexId = /^[a-zA-Z0-9]{6,20}$/;
 const regexPw = /^[A-Za-z\d]{6,}$/;
 const regexName = /[가-힣]{2,}/;
 const regexTel = /^\d{2,3}-\d{3,4}-\d{4}$/;
