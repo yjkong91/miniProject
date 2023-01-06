@@ -81,7 +81,7 @@ li {
 .searchwrap {
   flex-direction: row;
   text-align: center;
-  width: 700px;
+  width: 70%;
   height: 300px;
   /* background-color: red; */
 }
@@ -95,7 +95,6 @@ li {
   margin-bottom: 20px;
   margin-top: 30px;
   color: #939599;
-  border-radius: 10px 10px 0 0;
 }
 
 .searchwrap>form>input:first-of-type {
@@ -107,43 +106,41 @@ li {
   margin-bottom: 20px;
   margin-right: 2px;
   cursor: pointer;
-  border-radius: 0 0 0 10px;
 }
 
 .searchbtn {
-  /* flex-direction: row; */
   width: 100px;
   border: 1px solid #939599;
-  padding: 10px;
+  padding: 12px;
   box-sizing: border-box;
-  font-size: 13px;
   cursor: pointer;
   margin-left: 3px;
-  border-radius: 0 0 10px 0;
-  background: url(../img/search.png) no-repeat center #654EA3;
+  background-color: #654EA3;
+  color: white;
+  font-size: 14px;
 }
 
-.searchbtn:hover {
+input[type=submit]:hover {
   opacity: .7;
 }
 
 .login {
   text-align: center;
-  width: 300px;
+  width: 30%;
   height: 150px;
-  /* background-color: red; */
+  margin-right: 50px;
+  /* background-color: blue; */
+  padding: 10px;
 }
 
-.login>div {
+.login>h5 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.loginform {
   display: flex;
-}
-
-.login>h3 {
-  margin-bottom: 15px;
-}
-
-.loginwrap {
-  flex-direction: column;
+  align-items: center;
 }
 
 .loginwrap>input {
@@ -155,33 +152,21 @@ li {
   cursor: pointer;
 }
 
-.loginwrap>input:first-of-type {
-  border-radius: 10px 10px 0 0;
-}
-
-.loginwrap>input:nth-of-type(2) {
-  border-radius: 0 0 10px 10px;
-}
-
-.login>div>form>.submit {
-  width: 50px;
+.login>div>.loginform>.submit {
+  width: 30%;
   height: 30px;
-  border-radius: 10px;
   font-size: 12px;
   margin-top: 10px;
   border: 1px solid #939599;
   background-color: #654EA3;
   color: white;
   cursor: pointer;
-}
-
-.login>div>form>.submit:hover {
-  opacity: .7;
+  margin-right: 40px
 }
 
 .login>p {
   font-size: 13px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .section02 {
