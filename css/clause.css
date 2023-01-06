@@ -83,11 +83,13 @@ button {
   height: 30px;
   line-height: 30px;
   background-color: #654EA3;
-  color: white;
   display: block;
   font-size: 15px;
 }
+button>a{
 
+  color: white;
+}
 #chk01:disabled+label {
   color: lightgray;
 }
