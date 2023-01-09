@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .form-group:first-of-type {
+      display: none;
+    }
+
+    .btn {
+      width: 100px;
+      border: 1px solid #939599;
+      padding: 12px;
+      box-sizing: border-box;
+      cursor: pointer;
+      margin-left: 3px;
+      background-color: #654EA3;
+      color: white;
+      font-size: 14px;
+    }
+
+    input {
+      width: 490px;
+      border: 1px solid #939599;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 15px;
+      margin-bottom: 20px;
+      margin-right: 2px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+  <form action="http://info.sweettracker.co.kr/tracking/4" method="post">
+    <div class="form-group">
+      <label for="t_key">sbIvLYaq5gaeWCuwSLl4cw</label>
+      <input type="text" class="form-control" id="t_key" name="t_key" placeholder="sbIvLYaq5gaeWCuwSLl4cw" value="sbIvLYaq5gaeWCuwSLl4cw">
+    </div>
+    <div class="form-group">
+      <label for="t_code"></label>
+      <input type="text" class="form-control" name="t_code" id="t_code" placeholder="택배사 선택">
+    </div>
+    <div class="form-group">
+      <label for="t_invoice"></label>
+      <input type="text" class="form-control" name="t_invoice" id="t_invoice" placeholder="운송장 번호 - 없이 입력">
+    </div>
+    <button type="submit" class="btn btn-default">조회하기</button>
+  </form>
+
+  <script>
+  </script>
+</body>
+
+</html>

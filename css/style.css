@@ -78,6 +78,10 @@ li {
   display: flex;
 }
 
+.form-group:first-of-type {
+  display: none;
+}
+
 .searchwrap {
   flex-direction: row;
   text-align: center;
@@ -86,8 +90,8 @@ li {
   /* background-color: red; */
 }
 
-.searchwrap>form>select {
-  width: 600px;
+#t_code {
+  width: 500px;
   border: 1px solid #939599;
   padding: 10px;
   box-sizing: border-box;
@@ -95,10 +99,11 @@ li {
   margin-bottom: 20px;
   margin-top: 30px;
   color: #939599;
+  /* background-color: red; */
 }
 
-.searchwrap>form>input:first-of-type {
-  width: 490px;
+#t_invoice {
+  width: 500px;
   border: 1px solid #939599;
   padding: 10px;
   box-sizing: border-box;
@@ -106,12 +111,13 @@ li {
   margin-bottom: 20px;
   margin-right: 2px;
   cursor: pointer;
+  /* background-color: red; */
 }
 
-.searchbtn {
+.btn {
   width: 100px;
   border: 1px solid #939599;
-  padding: 12px;
+  padding: 11px;
   box-sizing: border-box;
   cursor: pointer;
   margin-left: 3px;
@@ -120,7 +126,7 @@ li {
   font-size: 14px;
 }
 
-input[type=submit]:hover {
+.btn:hover {
   opacity: .7;
 }
 
